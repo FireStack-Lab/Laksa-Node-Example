@@ -1,7 +1,9 @@
 import Laksa from 'laksa'
 
 const laksa = new Laksa()
-const provider = new laksa.Modules.HttpProvider('https://api-scilla.zilliqa.com')
+const provider = new laksa.Modules.HttpProvider(
+  'https://api-scilla.zilliqa.com'
+)
 
 laksa.setProvider(provider)
 

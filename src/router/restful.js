@@ -1,4 +1,4 @@
-import { isConnected, getBalance } from '../services/restful/laksa'
+import * as laksa from '../services/restful/laksa'
 
 import restfulGenerator from '../utils/restfulGenerator'
 
@@ -6,12 +6,12 @@ const routerTable = [
   {
     method: 'get',
     name: '/isConnected',
-    exec: isConnected
+    exec: laksa.isConnected
   },
   {
     method: 'get',
     name: '/getBalance',
-    exec: getBalance
+    exec: laksa.getBalance
   }
 ]
 
