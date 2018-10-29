@@ -14,6 +14,7 @@ export const isConnected = async () => {
 
 export const getBalance = async req => {
   const { query } = req
+  console.log(query)
   const result = await laksa.zil.getBalance({ address: query.address })
   return result
 }

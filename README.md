@@ -13,6 +13,14 @@ $bash curl http://localhost:3000/laksa/isConnected
 true #if return ture, your local node server is connected to Zilliqa
 ```
 
+or like this
+
+```bash
+$bash curl curl http://localhost:3000/laksa/getBalance\?address\=9bfec715a6bd658fcb62b0f8cc9bfa2ade71434a
+
+{"balance":0,"nonce":0} # return the balance of requested address
+```
+
 ## Edit your restful API
 
 There are 2 places you need to edit.
