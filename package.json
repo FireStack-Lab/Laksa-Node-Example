@@ -8,7 +8,7 @@
     "watch:hot": "yarn clean:hot && webpack && node-hot",
     "clean:server": "rm -rf dist",
     "pack:server": "yarn clean:hot && webpack",
-    "build:server": "yarn clean:hot && yarn clean:server && babel src --presets latest -d dist",
+    "build:server": "yarn clean:hot && yarn clean:server && babel src -d dist",
     "run:server": "yarn build:server && node ./dist/index -p 3000"
   },
   "author": "neeboo",
@@ -42,6 +42,8 @@
     "errorhandler": "^1.5.0",
     "eslint": "^5.7.0",
     "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
     "express": "^4.16.4",
     "moment": "^2.22.2",
     "morgan": "^1.9.1",
