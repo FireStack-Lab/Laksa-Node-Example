@@ -52,6 +52,6 @@
     "webpack-command": "^0.4.1"
   },
   "dependencies": {
-    "laksa": "^0.0.50"
+    "laksa": "^0.0.108"
   }
 }
